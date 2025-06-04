@@ -28,28 +28,44 @@ const CrimePanel: React.FC = () => {
   const currentData = excelData.length > 0 ? excelData : fullCrimeData;
 
   // Daftar jenis kejahatan yang akan ditampilkan (tidak termasuk kecelakaan lalu lintas)
-const crimeTypes = [
-  'Penganiayaan',
-  'Kekerasan Seksual',
-  'Curat',
-  'Curanmor',
-  'Tawuran',
-  'Perampokan',
-  'Narkoba',
-  'Klitih',
-  'Vandalisme'
-];
+  const crimeTypes = [
+    'Penganiayaan',
+    'Kekerasan Seksual',
+    'Curat',
+    'Curanmor',
+    'Tawuran',
+    'Perampokan',
+    'Narkoba',
+    'Klitih',
+    'Vandalisme'
+  ];
   // Filter data sesuai jenis kejahatan
   const crimeData = currentData.filter((item) =>
     crimeTypes.includes(item.Jenis_Kejadian)
   );
 
+  // Array nama bulan dalam Bahasa Indonesia
+  const monthNames = [
+    'Januari',
+    'Februari',
+    'Maret',
+    'April',
+    'Mei',
+    'Juni',
+    'Juli',
+    'Agustus',
+    'September',
+    'Oktober',
+    'November',
+    'Desember'
+  ];
+
   // Tren bulanan: hitung jumlah kejadian per bulan
   const monthlyTrend = Array.from({ length: 12 }, (_, i) => {
-    const month = i + 1;
-    const monthCrimes = crimeData.filter((item) => item.Bulan === month);
+    const monthIndex = i + 1;
+    const monthCrimes = crimeData.filter((item) => item.Bulan === monthIndex);
     return {
-      month: `Bulan ${month}`,
+      month: monthNames[i],
       count: monthCrimes.length
     };
   });

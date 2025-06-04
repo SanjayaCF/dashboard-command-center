@@ -2,7 +2,15 @@ import React, { useEffect, useRef } from 'react';
 import { Card } from '@/components/ui/card';
 import { useExcelData } from '../../hooks/useExcelData';
 import { fullCrimeData } from '../../data/crimeData';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, } from 'recharts';
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts';
 
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -29,22 +37,21 @@ const LocationPanel: React.FC = () => {
     })
     .sort((a, b) => b.count - a.count);
 
-  // Crime type distribution by top districts
-  const topDistricts = districtData.slice(0, 5);
-  const crimeTypeByDistrict = topDistricts.map(district => {
-    const districtIncidents = currentData.filter(item => item.Kecamatan === district.district);
+  // Crime type distribution by each district (fixing N/A)
+  const crimeTypeByDistrict = districtData.map(districtInfo => {
+    const districtIncidents = currentData.filter(item => item.Kecamatan === districtInfo.district);
     const crimeTypes = districtIncidents.reduce((acc, item) => {
       acc[item.Jenis_Kejadian] = (acc[item.Jenis_Kejadian] || 0) + 1;
       return acc;
     }, {} as Record<string, number>);
     
-    const topCrime = Object.entries(crimeTypes).sort((a, b) => b[1] - a[1])[0];
+    const topCrimeEntry = Object.entries(crimeTypes).sort((a, b) => b[1] - a[1])[0];
     
     return {
-      district: district.district,
-      topCrime: topCrime ? topCrime[0] : 'N/A',
-      topCrimeCount: topCrime ? topCrime[1] : 0,
-      totalIncidents: district.count
+      district: districtInfo.district,
+      topCrime: topCrimeEntry ? topCrimeEntry[0] : 'N/A',
+      topCrimeCount: topCrimeEntry ? topCrimeEntry[1] : 0,
+      totalIncidents: districtInfo.count
     };
   });
 

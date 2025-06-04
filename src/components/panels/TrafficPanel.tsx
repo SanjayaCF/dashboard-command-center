@@ -26,6 +26,22 @@ const TrafficPanel: React.FC = () => {
   const { data: excelData } = useExcelData();
   const currentData = excelData.length > 0 ? excelData : fullCrimeData;
 
+  // Nama bulan dalam Bahasa Indonesia
+  const monthNames = [
+    'Januari',
+    'Februari',
+    'Maret',
+    'April',
+    'Mei',
+    'Juni',
+    'Juli',
+    'Agustus',
+    'September',
+    'Oktober',
+    'November',
+    'Desember'
+  ];
+
   // Filter traffic-related incidents
   const trafficData = React.useMemo(
     () => currentData.filter(item => item.Jenis_Kejadian === 'Kecelakaan Lalu Lintas'),
@@ -35,15 +51,15 @@ const TrafficPanel: React.FC = () => {
   // Monthly traffic trend
   const monthlyTrend = React.useMemo(() => {
     return Array.from({ length: 12 }, (_, i) => {
-      const month = i + 1;
-      const monthData = trafficData.filter(item => item.Bulan === month);
+      const monthIndex = i + 1;
+      const monthData = trafficData.filter(item => item.Bulan === monthIndex);
       const avgVictims =
         monthData.length > 0
           ? monthData.reduce((sum, item) => sum + item.Korban, 0) / monthData.length
           : 0;
 
       return {
-        month: `Bulan ${month}`,
+        month: monthNames[i],
         count: monthData.length,
         avgVictims: Math.round(avgVictims * 10) / 10
       };
