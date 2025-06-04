@@ -24,7 +24,7 @@ const OverviewPanel: React.FC = () => {
     return acc;
   }, {} as Record<string, number>);
   
-  const completedPercentage = Math.round(((statusCounts['Selesai'] / totalIncidents) * 100)*100)/100;
+  const completedPercentage = Math.round(((statusCounts['Selesai'] / totalIncidents) * 100));
 
   // Monthly trend data
   const monthlyData = Array.from({ length: 12 }, (_, i) => {
