@@ -4,6 +4,10 @@ import { useExcelData } from '../../hooks/useExcelData';
 import { fullCrimeData } from '../../data/crimeData';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, } from 'recharts';
 
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
@@ -68,6 +72,13 @@ const LocationPanel: React.FC = () => {
   const leafletMapRef = useRef<L.Map | null>(null);
   const center: [number, number] = [-7.797068, 110.370529];
 
+  delete L.Icon.Default.prototype._getIconUrl;
+  L.Icon.Default.mergeOptions({
+    iconRetinaUrl: markerIcon2x,
+    iconUrl: markerIcon,
+    shadowUrl: markerShadow,
+  });
+  
   useEffect(() => {
     if (mapRef.current && !leafletMapRef.current) {
       const map = L.map(mapRef.current).setView(center, 12);
