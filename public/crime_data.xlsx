@@ -1,0 +1,201 @@
+ID Kejadian,Jenis Kejadian,Tanggal Kejadian,Waktu Kejadian,Kota,Kecamatan,Latitude,Longitude,Korban,Status,Koordinat,Bulan,Durasi_Respons
+1,Penganiayaan,2025-04-13,20:07,Yogyakarta,Jetis,"-7,793","110,363",1,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",4,77
+2,Penipuan Online,2025-12-15,00:47,Yogyakarta,Kotagede,"-7,825","110,385",3,Penyidikan Lanjutan,"-7.825, 110.385",12,101
+3,Tawuran,2025-09-28,08:15,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Penyidikan Lanjutan,"-7.801, 110.375",9,87
+4,Tawuran,2025-04-17,07:08,Yogyakarta,Mantrijeron,"-7,81","110,377",2,Penyidikan Lanjutan,"-7.81, 110.377",4,70
+5,Penipuan Online,2025-03-13,23:06,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Penyidikan Lanjutan,"-7.801, 110.375",3,119
+6,Pencurian Motor,2025-07-08,21:47,Yogyakarta,Tegalrejo,"-7,776","110,368",3,Penyidikan Lanjutan,"-7.776, 110.368",7,47
+7,Penganiayaan,2025-01-21,17:05,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Selesai,"-7.801, 110.375",1,33
+8,Penganiayaan,2025-04-13,18:27,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",4,30
+9,Pencurian Motor,2025-05-02,01:01,Yogyakarta,Jetis,"-7,793","110,363",2,Penyidikan Lanjutan,"-7.793, 110.363",5,38
+10,Klitih,2025-08-03,02:13,Yogyakarta,Jetis,"-7,793","110,363",2,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",8,34
+11,Vandalisme,2025-11-27,07:32,Yogyakarta,Danurejan,"-7,796","110,367",1,Selesai,"-7.796, 110.367",11,95
+12,Pemerkosaan,2025-03-29,19:01,Yogyakarta,Mergangsan,"-7,787","110,367",3,Selesai,"-7.787, 110.367",3,35
+13,Narkoba,2025-04-10,17:12,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Dilimpahkan ke Cyber Crime,"-7.81, 110.377",4,43
+14,Penipuan Online,2025-12-26,22:41,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dalam Penyelidikan,"-7.801, 110.375",12,111
+15,Pencurian Motor,2025-06-01,22:34,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Tersangka Ditangkap,"-7.801, 110.375",6,73
+16,Tawuran,2025-05-11,13:14,Yogyakarta,Kotagede,"-7,825","110,385",2,Dalam Penyelidikan,"-7.825, 110.385",5,45
+17,Penipuan Online,2025-05-30,14:37,Yogyakarta,Jetis,"-7,793","110,363",2,Dalam Penyelidikan,"-7.793, 110.363",5,64
+18,Vandalisme,2025-11-05,08:51,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Dalam Penyelidikan,"-7.81, 110.377",11,96
+19,Tawuran,2025-09-15,00:48,Yogyakarta,Danurejan,"-7,796","110,367",3,Penyidikan Lanjutan,"-7.796, 110.367",9,68
+20,Perampokan,2025-12-10,05:44,Yogyakarta,Mergangsan,"-7,787","110,367",3,Selesai,"-7.787, 110.367",12,52
+21,Penganiayaan,2025-10-21,13:21,Yogyakarta,Gondokusuman,"-7,783","110,381",2,Dalam Penyelidikan,"-7.783, 110.381",10,47
+22,Perampokan,2025-07-11,08:09,Yogyakarta,Mergangsan,"-7,787","110,367",2,Selesai,"-7.787, 110.367",7,74
+23,Penipuan Online,2025-10-04,06:48,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dilimpahkan ke Cyber Crime,"-7.776, 110.368",10,108
+24,Vandalisme,2025-06-10,10:06,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Tersangka Ditangkap,"-7.801, 110.375",6,37
+25,Pemerkosaan,2025-11-10,02:24,Yogyakarta,Danurejan,"-7,796","110,367",1,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",11,30
+26,Penipuan Online,2025-01-22,03:22,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dilimpahkan ke Cyber Crime,"-7.776, 110.368",1,95
+27,Pencurian Motor,2025-09-10,11:38,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Penyidikan Lanjutan,"-7.81, 110.377",9,31
+28,Kecelakaan Lalu Lintas,2025-08-24,08:51,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Tersangka Ditangkap,"-7.783, 110.381",8,26
+29,Penipuan Online,2025-12-11,01:46,Yogyakarta,Jetis,"-7,793","110,363",1,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",12,93
+30,Penganiayaan,2025-02-18,14:34,Yogyakarta,Danurejan,"-7,796","110,367",1,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",2,59
+31,Penganiayaan,2025-02-28,03:59,Yogyakarta,Danurejan,"-7,796","110,367",3,Tersangka Ditangkap,"-7.796, 110.367",2,38
+32,Penipuan Online,2025-06-19,12:05,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Tersangka Ditangkap,"-7.801, 110.375",6,110
+33,Tawuran,2025-07-07,17:18,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Dilimpahkan ke Cyber Crime,"-7.776, 110.381",7,54
+34,Kecelakaan Lalu Lintas,2025-09-28,20:39,Yogyakarta,Danurejan,"-7,796","110,367",2,Tersangka Ditangkap,"-7.796, 110.367",9,36
+35,Pencurian Motor,2025-07-09,11:36,Yogyakarta,Kotagede,"-7,825","110,385",1,Dilimpahkan ke Cyber Crime,"-7.825, 110.385",7,76
+36,Penipuan Online,2025-06-24,06:45,Yogyakarta,Gondokusuman,"-7,783","110,381",2,Dilimpahkan ke Cyber Crime,"-7.783, 110.381",6,116
+37,Tawuran,2025-02-20,02:02,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Penyidikan Lanjutan,"-7.783, 110.381",2,87
+38,Penganiayaan,2025-12-30,21:14,Yogyakarta,Kotagede,"-7,825","110,385",1,Dalam Penyelidikan,"-7.825, 110.385",12,77
+39,Penganiayaan,2025-02-24,09:05,Yogyakarta,Kotagede,"-7,825","110,385",2,Dilimpahkan ke Cyber Crime,"-7.825, 110.385",2,46
+40,Vandalisme,2025-09-01,07:55,Yogyakarta,Kotagede,"-7,825","110,385",2,Selesai,"-7.825, 110.385",9,37
+41,Penipuan Online,2025-11-16,03:24,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Dalam Penyelidikan,"-7.783, 110.381",11,109
+42,Kecelakaan Lalu Lintas,2025-05-11,08:29,Yogyakarta,Mergangsan,"-7,787","110,367",2,Dalam Penyelidikan,"-7.787, 110.367",5,51
+43,Klitih,2025-11-03,20:53,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Dalam Penyelidikan,"-7.783, 110.381",11,84
+44,Kecelakaan Lalu Lintas,2025-05-15,11:10,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Penyidikan Lanjutan,"-7.776, 110.381",5,31
+45,Penganiayaan,2025-01-21,11:22,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",1,47
+46,Penganiayaan,2025-11-25,06:42,Yogyakarta,Tegalrejo,"-7,776","110,368",3,Penyidikan Lanjutan,"-7.776, 110.368",11,80
+47,Perampokan,2025-06-16,08:44,Yogyakarta,Mergangsan,"-7,787","110,367",3,Dilimpahkan ke Cyber Crime,"-7.787, 110.367",6,66
+48,Penganiayaan,2025-10-01,21:41,Yogyakarta,Jetis,"-7,793","110,363",3,Penyidikan Lanjutan,"-7.793, 110.363",10,33
+49,Pencurian Motor,2025-03-30,02:38,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Penyidikan Lanjutan,"-7.776, 110.368",3,76
+50,Narkoba,2025-11-12,20:10,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Selesai,"-7.801, 110.375",11,67
+51,Penipuan Online,2025-01-14,17:46,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Penyidikan Lanjutan,"-7.776, 110.381",1,65
+52,Kecelakaan Lalu Lintas,2025-08-30,07:10,Yogyakarta,Gedongtengen,"-7,776","110,381",2,Tersangka Ditangkap,"-7.776, 110.381",8,21
+53,Narkoba,2025-09-22,14:24,Yogyakarta,Jetis,"-7,793","110,363",3,Selesai,"-7.793, 110.363",9,66
+54,Tawuran,2025-12-12,08:59,Yogyakarta,Mergangsan,"-7,787","110,367",1,Penyidikan Lanjutan,"-7.787, 110.367",12,86
+55,Klitih,2025-02-22,20:44,Yogyakarta,Kotagede,"-7,825","110,385",1,Dalam Penyelidikan,"-7.825, 110.385",2,73
+56,Pencurian Motor,2025-12-06,17:14,Yogyakarta,Mergangsan,"-7,787","110,367",2,Tersangka Ditangkap,"-7.787, 110.367",12,91
+57,Kecelakaan Lalu Lintas,2025-04-02,21:20,Yogyakarta,Gedongtengen,"-7,776","110,381",1,Tersangka Ditangkap,"-7.776, 110.381",4,43
+58,Narkoba,2025-09-21,01:14,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Tersangka Ditangkap,"-7.783, 110.381",9,66
+59,Klitih,2025-02-04,01:51,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Selesai,"-7.801, 110.375",2,54
+60,Perampokan,2025-07-25,10:25,Yogyakarta,Jetis,"-7,793","110,363",3,Penyidikan Lanjutan,"-7.793, 110.363",7,57
+61,Pencurian Motor,2025-03-22,08:04,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Penyidikan Lanjutan,"-7.801, 110.375",3,99
+62,Pencurian Motor,2025-02-19,06:58,Yogyakarta,Mantrijeron,"-7,81","110,377",2,Dalam Penyelidikan,"-7.81, 110.377",2,96
+63,Perampokan,2025-12-26,18:56,Yogyakarta,Mantrijeron,"-7,81","110,377",2,Dalam Penyelidikan,"-7.81, 110.377",12,98
+64,Penipuan Online,2025-01-02,22:20,Yogyakarta,Mergangsan,"-7,787","110,367",3,Tersangka Ditangkap,"-7.787, 110.367",1,89
+65,Perampokan,2025-02-23,06:41,Yogyakarta,Gedongtengen,"-7,776","110,381",1,Dalam Penyelidikan,"-7.776, 110.381",2,89
+66,Pencurian Motor,2025-04-16,15:25,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Selesai,"-7.776, 110.381",4,35
+67,Pencurian Motor,2025-09-17,20:29,Yogyakarta,Kotagede,"-7,825","110,385",2,Penyidikan Lanjutan,"-7.825, 110.385",9,35
+68,Narkoba,2025-11-06,04:16,Yogyakarta,Kotagede,"-7,825","110,385",1,Tersangka Ditangkap,"-7.825, 110.385",11,79
+69,Penganiayaan,2025-07-10,04:15,Yogyakarta,Kotagede,"-7,825","110,385",3,Dalam Penyelidikan,"-7.825, 110.385",7,64
+70,Klitih,2025-08-06,23:35,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Selesai,"-7.783, 110.381",8,53
+71,Perampokan,2025-02-13,17:16,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Selesai,"-7.776, 110.368",2,96
+72,Klitih,2025-06-11,23:37,Yogyakarta,Danurejan,"-7,796","110,367",3,Dalam Penyelidikan,"-7.796, 110.367",6,59
+73,Perampokan,2025-07-21,13:57,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Penyidikan Lanjutan,"-7.776, 110.368",7,69
+74,Tawuran,2025-09-27,18:25,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dalam Penyelidikan,"-7.801, 110.375",9,47
+75,Pencurian Motor,2025-12-17,11:14,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Tersangka Ditangkap,"-7.776, 110.368",12,61
+76,Penganiayaan,2025-10-31,04:32,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Dalam Penyelidikan,"-7.783, 110.381",10,47
+77,Narkoba,2025-09-28,15:05,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Selesai,"-7.801, 110.375",9,99
+78,Penganiayaan,2025-08-03,01:55,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dalam Penyelidikan,"-7.776, 110.368",8,60
+79,Penganiayaan,2025-09-09,03:09,Yogyakarta,Gondokusuman,"-7,783","110,381",2,Penyidikan Lanjutan,"-7.783, 110.381",9,76
+80,Penganiayaan,2025-07-09,20:10,Yogyakarta,Danurejan,"-7,796","110,367",1,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",7,75
+81,Klitih,2025-10-23,21:27,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Dalam Penyelidikan,"-7.776, 110.368",10,45
+82,Perampokan,2025-08-01,19:04,Yogyakarta,Gondokusuman,"-7,783","110,381",2,Penyidikan Lanjutan,"-7.783, 110.381",8,35
+83,Pemerkosaan,2025-07-27,12:24,Yogyakarta,Kotagede,"-7,825","110,385",1,Penyidikan Lanjutan,"-7.825, 110.385",7,38
+84,Tawuran,2025-08-25,19:29,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Selesai,"-7.776, 110.381",8,65
+85,Kecelakaan Lalu Lintas,2025-12-04,16:16,Yogyakarta,Kotagede,"-7,825","110,385",2,Penyidikan Lanjutan,"-7.825, 110.385",12,42
+86,Penganiayaan,2025-02-22,17:55,Yogyakarta,Gedongtengen,"-7,776","110,381",1,Penyidikan Lanjutan,"-7.776, 110.381",2,31
+87,Penipuan Online,2025-10-07,00:43,Yogyakarta,Jetis,"-7,793","110,363",3,Penyidikan Lanjutan,"-7.793, 110.363",10,79
+88,Klitih,2025-08-05,23:07,Yogyakarta,Jetis,"-7,793","110,363",2,Penyidikan Lanjutan,"-7.793, 110.363",8,41
+89,Narkoba,2025-09-09,21:56,Yogyakarta,Jetis,"-7,793","110,363",3,Tersangka Ditangkap,"-7.793, 110.363",9,91
+90,Kecelakaan Lalu Lintas,2025-07-07,17:48,Yogyakarta,Danurejan,"-7,796","110,367",3,Tersangka Ditangkap,"-7.796, 110.367",7,46
+91,Pemerkosaan,2025-02-10,08:49,Yogyakarta,Kotagede,"-7,825","110,385",2,Selesai,"-7.825, 110.385",2,64
+92,Penipuan Online,2025-06-06,20:21,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Dalam Penyelidikan,"-7.776, 110.381",6,65
+93,Pemerkosaan,2025-01-15,03:18,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Penyidikan Lanjutan,"-7.783, 110.381",1,66
+94,Kecelakaan Lalu Lintas,2025-10-28,13:10,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Dalam Penyelidikan,"-7.801, 110.375",10,21
+95,Penganiayaan,2025-03-06,14:00,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Dalam Penyelidikan,"-7.783, 110.381",3,35
+96,Penipuan Online,2025-12-11,23:56,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Selesai,"-7.801, 110.375",12,116
+97,Pemerkosaan,2025-11-23,23:16,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Penyidikan Lanjutan,"-7.81, 110.377",11,63
+98,Narkoba,2025-01-09,16:48,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Penyidikan Lanjutan,"-7.783, 110.381",1,72
+99,Perampokan,2025-12-10,05:32,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Dilimpahkan ke Cyber Crime,"-7.776, 110.368",12,80
+100,Pencurian Motor,2025-05-09,03:55,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dalam Penyelidikan,"-7.776, 110.368",5,66
+101,Perampokan,2025-05-16,20:19,Yogyakarta,Mergangsan,"-7,787","110,367",3,Dalam Penyelidikan,"-7.787, 110.367",5,40
+102,Kecelakaan Lalu Lintas,2025-03-04,20:32,Yogyakarta,Kotagede,"-7,825","110,385",3,Tersangka Ditangkap,"-7.825, 110.385",3,37
+103,Klitih,2025-05-19,19:12,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",5,78
+104,Pencurian Motor,2025-03-22,04:23,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Tersangka Ditangkap,"-7.801, 110.375",3,66
+105,Tawuran,2025-06-12,05:34,Yogyakarta,Kotagede,"-7,825","110,385",1,Tersangka Ditangkap,"-7.825, 110.385",6,59
+106,Narkoba,2025-10-16,16:58,Yogyakarta,Danurejan,"-7,796","110,367",1,Tersangka Ditangkap,"-7.796, 110.367",10,42
+107,Tawuran,2025-09-18,00:38,Yogyakarta,Mergangsan,"-7,787","110,367",2,Selesai,"-7.787, 110.367",9,37
+108,Penipuan Online,2025-08-19,10:31,Yogyakarta,Danurejan,"-7,796","110,367",2,Selesai,"-7.796, 110.367",8,73
+109,Pencurian Motor,2025-02-10,00:07,Yogyakarta,Danurejan,"-7,796","110,367",1,Tersangka Ditangkap,"-7.796, 110.367",2,35
+110,Tawuran,2025-01-28,11:56,Yogyakarta,Danurejan,"-7,796","110,367",2,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",1,45
+111,Tawuran,2025-05-15,09:15,Yogyakarta,Kotagede,"-7,825","110,385",1,Dalam Penyelidikan,"-7.825, 110.385",5,30
+112,Klitih,2025-07-20,01:15,Yogyakarta,Danurejan,"-7,796","110,367",3,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",7,77
+113,Perampokan,2025-11-24,18:05,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Penyidikan Lanjutan,"-7.776, 110.368",11,69
+114,Klitih,2025-09-25,02:46,Yogyakarta,Jetis,"-7,793","110,363",3,Selesai,"-7.793, 110.363",9,32
+115,Pencurian Motor,2025-02-02,15:52,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Dalam Penyelidikan,"-7.81, 110.377",2,52
+116,Pencurian Motor,2025-02-17,02:48,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dalam Penyelidikan,"-7.801, 110.375",2,99
+117,Kecelakaan Lalu Lintas,2025-03-03,17:49,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Penyidikan Lanjutan,"-7.801, 110.375",3,20
+118,Pemerkosaan,2025-08-04,04:08,Yogyakarta,Mantrijeron,"-7,81","110,377",2,Penyidikan Lanjutan,"-7.81, 110.377",8,88
+119,Vandalisme,2025-10-20,21:30,Yogyakarta,Kotagede,"-7,825","110,385",3,Tersangka Ditangkap,"-7.825, 110.385",10,60
+120,Perampokan,2025-04-09,17:10,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Selesai,"-7.783, 110.381",4,95
+121,Pencurian Motor,2025-06-21,08:33,Yogyakarta,Kotagede,"-7,825","110,385",1,Selesai,"-7.825, 110.385",6,51
+122,Kecelakaan Lalu Lintas,2025-12-26,19:27,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",12,34
+123,Pemerkosaan,2025-08-02,06:59,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Tersangka Ditangkap,"-7.801, 110.375",8,35
+124,Perampokan,2025-02-04,17:48,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Tersangka Ditangkap,"-7.81, 110.377",2,42
+125,Pemerkosaan,2025-08-15,23:44,Yogyakarta,Danurejan,"-7,796","110,367",2,Tersangka Ditangkap,"-7.796, 110.367",8,44
+126,Tawuran,2025-04-11,06:45,Yogyakarta,Kotagede,"-7,825","110,385",1,Tersangka Ditangkap,"-7.825, 110.385",4,32
+127,Kecelakaan Lalu Lintas,2025-05-11,09:25,Yogyakarta,Gedongtengen,"-7,776","110,381",1,Selesai,"-7.776, 110.381",5,27
+128,Perampokan,2025-09-14,21:41,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Selesai,"-7.81, 110.377",9,75
+129,Penganiayaan,2025-01-05,11:28,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Tersangka Ditangkap,"-7.776, 110.368",1,45
+130,Penipuan Online,2025-08-06,16:28,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",8,76
+131,Penipuan Online,2025-09-12,03:15,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Dalam Penyelidikan,"-7.81, 110.377",9,78
+132,Perampokan,2025-12-25,07:04,Yogyakarta,Kotagede,"-7,825","110,385",3,Dalam Penyelidikan,"-7.825, 110.385",12,82
+133,Pemerkosaan,2025-10-10,10:01,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Dilimpahkan ke Cyber Crime,"-7.801, 110.375",10,70
+134,Kecelakaan Lalu Lintas,2025-07-26,18:35,Yogyakarta,Gondokusuman,"-7,783","110,381",2,Tersangka Ditangkap,"-7.783, 110.381",7,21
+135,Penipuan Online,2025-01-15,07:37,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Selesai,"-7.81, 110.377",1,113
+136,Kecelakaan Lalu Lintas,2025-12-12,07:00,Yogyakarta,Mergangsan,"-7,787","110,367",3,Dalam Penyelidikan,"-7.787, 110.367",12,41
+137,Penipuan Online,2025-02-11,02:45,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Penyidikan Lanjutan,"-7.801, 110.375",2,84
+138,Tawuran,2025-06-28,20:03,Yogyakarta,Kotagede,"-7,825","110,385",2,Penyidikan Lanjutan,"-7.825, 110.385",6,74
+139,Klitih,2025-03-04,07:04,Yogyakarta,Jetis,"-7,793","110,363",1,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",3,34
+140,Tawuran,2025-12-18,01:55,Yogyakarta,Gedongtengen,"-7,776","110,381",2,Tersangka Ditangkap,"-7.776, 110.381",12,65
+141,Penipuan Online,2025-08-19,10:04,Yogyakarta,Danurejan,"-7,796","110,367",1,Dalam Penyelidikan,"-7.796, 110.367",8,80
+142,Penganiayaan,2025-08-29,16:15,Yogyakarta,Kotagede,"-7,825","110,385",1,Tersangka Ditangkap,"-7.825, 110.385",8,78
+143,Penganiayaan,2025-02-21,08:42,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dalam Penyelidikan,"-7.776, 110.368",2,68
+144,Tawuran,2025-04-06,15:13,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Dilimpahkan ke Cyber Crime,"-7.776, 110.368",4,61
+145,Penganiayaan,2025-08-10,17:08,Yogyakarta,Jetis,"-7,793","110,363",2,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",8,51
+146,Penipuan Online,2025-08-19,23:59,Yogyakarta,Danurejan,"-7,796","110,367",1,Penyidikan Lanjutan,"-7.796, 110.367",8,72
+147,Perampokan,2025-08-25,18:36,Yogyakarta,Mergangsan,"-7,787","110,367",1,Tersangka Ditangkap,"-7.787, 110.367",8,72
+148,Tawuran,2025-05-23,15:15,Yogyakarta,Jetis,"-7,793","110,363",1,Penyidikan Lanjutan,"-7.793, 110.363",5,48
+149,Klitih,2025-06-20,15:51,Yogyakarta,Jetis,"-7,793","110,363",3,Tersangka Ditangkap,"-7.793, 110.363",6,50
+150,Klitih,2025-01-29,13:12,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Penyidikan Lanjutan,"-7.801, 110.375",1,30
+151,Penganiayaan,2025-02-05,03:06,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Selesai,"-7.776, 110.368",2,41
+152,Penganiayaan,2025-01-13,21:27,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Selesai,"-7.801, 110.375",1,51
+153,Pencurian Motor,2025-06-09,11:27,Yogyakarta,Gedongtengen,"-7,776","110,381",2,Selesai,"-7.776, 110.381",6,45
+154,Vandalisme,2025-11-23,13:29,Yogyakarta,Danurejan,"-7,796","110,367",1,Selesai,"-7.796, 110.367",11,87
+155,Tawuran,2025-07-06,23:03,Yogyakarta,Mergangsan,"-7,787","110,367",2,Dalam Penyelidikan,"-7.787, 110.367",7,54
+156,Narkoba,2025-08-31,21:41,Yogyakarta,Mergangsan,"-7,787","110,367",2,Selesai,"-7.787, 110.367",8,30
+157,Penganiayaan,2025-03-27,20:06,Yogyakarta,Kotagede,"-7,825","110,385",3,Dilimpahkan ke Cyber Crime,"-7.825, 110.385",3,88
+158,Klitih,2025-10-11,01:25,Yogyakarta,Jetis,"-7,793","110,363",3,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",10,65
+159,Klitih,2025-03-07,23:21,Yogyakarta,Gedongtengen,"-7,776","110,381",2,Dalam Penyelidikan,"-7.776, 110.381",3,51
+160,Penganiayaan,2025-06-19,03:15,Yogyakarta,Tegalrejo,"-7,776","110,368",3,Selesai,"-7.776, 110.368",6,40
+161,Klitih,2025-02-14,06:12,Yogyakarta,Mergangsan,"-7,787","110,367",3,Selesai,"-7.787, 110.367",2,46
+162,Penipuan Online,2025-03-03,17:28,Yogyakarta,Gedongtengen,"-7,776","110,381",2,Selesai,"-7.776, 110.381",3,102
+163,Penipuan Online,2025-05-14,04:27,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Penyidikan Lanjutan,"-7.783, 110.381",5,119
+164,Vandalisme,2025-10-11,05:17,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Tersangka Ditangkap,"-7.783, 110.381",10,82
+165,Perampokan,2025-01-28,14:15,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Penyidikan Lanjutan,"-7.801, 110.375",1,89
+166,Narkoba,2025-04-18,02:28,Yogyakarta,Tegalrejo,"-7,776","110,368",1,Tersangka Ditangkap,"-7.776, 110.368",4,46
+167,Pencurian Motor,2025-02-13,17:06,Yogyakarta,Kotagede,"-7,825","110,385",3,Selesai,"-7.825, 110.385",2,40
+168,Vandalisme,2025-12-06,01:41,Yogyakarta,Mergangsan,"-7,787","110,367",2,Selesai,"-7.787, 110.367",12,45
+169,Kecelakaan Lalu Lintas,2025-10-13,17:53,Yogyakarta,Jetis,"-7,793","110,363",1,Penyidikan Lanjutan,"-7.793, 110.363",10,27
+170,Pencurian Motor,2025-11-27,00:05,Yogyakarta,Jetis,"-7,793","110,363",1,Penyidikan Lanjutan,"-7.793, 110.363",11,57
+171,Tawuran,2025-05-08,07:10,Yogyakarta,Mergangsan,"-7,787","110,367",3,Tersangka Ditangkap,"-7.787, 110.367",5,75
+172,Pemerkosaan,2025-12-14,13:31,Yogyakarta,Danurejan,"-7,796","110,367",2,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",12,64
+173,Kecelakaan Lalu Lintas,2025-08-19,15:13,Yogyakarta,Kotagede,"-7,825","110,385",2,Tersangka Ditangkap,"-7.825, 110.385",8,38
+174,Kecelakaan Lalu Lintas,2025-07-09,12:57,Yogyakarta,Gedongtengen,"-7,776","110,381",3,Penyidikan Lanjutan,"-7.776, 110.381",7,40
+175,Vandalisme,2025-08-13,01:10,Yogyakarta,Danurejan,"-7,796","110,367",2,Penyidikan Lanjutan,"-7.796, 110.367",8,92
+176,Perampokan,2025-10-10,12:00,Yogyakarta,Danurejan,"-7,796","110,367",2,Dalam Penyelidikan,"-7.796, 110.367",10,87
+177,Vandalisme,2025-05-01,12:16,Yogyakarta,Umbulharjo,"-7,801","110,375",3,Penyidikan Lanjutan,"-7.801, 110.375",5,92
+178,Tawuran,2025-04-26,14:18,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Dalam Penyelidikan,"-7.783, 110.381",4,57
+179,Penganiayaan,2025-08-21,13:44,Yogyakarta,Danurejan,"-7,796","110,367",1,Dilimpahkan ke Cyber Crime,"-7.796, 110.367",8,40
+180,Penganiayaan,2025-09-16,23:50,Yogyakarta,Danurejan,"-7,796","110,367",2,Tersangka Ditangkap,"-7.796, 110.367",9,56
+181,Perampokan,2025-12-25,17:42,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Tersangka Ditangkap,"-7.81, 110.377",12,71
+182,Tawuran,2025-07-17,22:31,Yogyakarta,Umbulharjo,"-7,801","110,375",1,Dalam Penyelidikan,"-7.801, 110.375",7,74
+183,Perampokan,2025-05-17,04:12,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Tersangka Ditangkap,"-7.776, 110.368",5,52
+184,Klitih,2025-11-14,09:13,Yogyakarta,Mantrijeron,"-7,81","110,377",1,Penyidikan Lanjutan,"-7.81, 110.377",11,66
+185,Penganiayaan,2025-06-14,01:37,Yogyakarta,Mantrijeron,"-7,81","110,377",3,Selesai,"-7.81, 110.377",6,63
+186,Kecelakaan Lalu Lintas,2025-08-13,23:34,Yogyakarta,Mergangsan,"-7,787","110,367",2,Dalam Penyelidikan,"-7.787, 110.367",8,36
+187,Narkoba,2025-11-03,01:47,Yogyakarta,Gondokusuman,"-7,783","110,381",1,Tersangka Ditangkap,"-7.783, 110.381",11,37
+188,Klitih,2025-08-22,10:03,Yogyakarta,Danurejan,"-7,796","110,367",3,Dalam Penyelidikan,"-7.796, 110.367",8,78
+189,Tawuran,2025-06-21,01:37,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Dalam Penyelidikan,"-7.783, 110.381",6,56
+190,Pencurian Motor,2025-06-01,15:32,Yogyakarta,Kotagede,"-7,825","110,385",3,Selesai,"-7.825, 110.385",6,37
+191,Perampokan,2025-11-11,16:10,Yogyakarta,Mergangsan,"-7,787","110,367",3,Penyidikan Lanjutan,"-7.787, 110.367",11,40
+192,Klitih,2025-06-09,01:32,Yogyakarta,Tegalrejo,"-7,776","110,368",3,Dalam Penyelidikan,"-7.776, 110.368",6,69
+193,Pencurian Motor,2025-04-06,02:54,Yogyakarta,Gondokusuman,"-7,783","110,381",3,Tersangka Ditangkap,"-7.783, 110.381",4,68
+194,Pemerkosaan,2025-08-21,05:04,Yogyakarta,Jetis,"-7,793","110,363",3,Dilimpahkan ke Cyber Crime,"-7.793, 110.363",8,40
+195,Narkoba,2025-06-29,19:04,Yogyakarta,Kotagede,"-7,825","110,385",1,Dalam Penyelidikan,"-7.825, 110.385",6,30
+196,Pencurian Motor,2025-04-23,21:55,Yogyakarta,Umbulharjo,"-7,801","110,375",2,Dalam Penyelidikan,"-7.801, 110.375",4,99
+197,Vandalisme,2025-11-14,07:25,Yogyakarta,Tegalrejo,"-7,776","110,368",2,Selesai,"-7.776, 110.368",11,43
+198,Penipuan Online,2025-02-21,03:56,Yogyakarta,Kotagede,"-7,825","110,385",1,Penyidikan Lanjutan,"-7.825, 110.385",2,81
+199,Vandalisme,2025-09-25,18:15,Yogyakarta,Mergangsan,"-7,787","110,367",3,Dilimpahkan ke Cyber Crime,"-7.787, 110.367",9,59
+200,Penganiayaan,2025-10-22,18:38,Yogyakarta,Mantrijeron,"-7,81","110,377",2,Tersangka Ditangkap,"-7.81, 110.377",10,53
