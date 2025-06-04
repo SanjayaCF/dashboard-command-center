@@ -39,12 +39,50 @@ const OverviewPanel: React.FC = () => {
     'Desember'
   ];
 
-  // Calculate KPIs
+  // Hitung total insiden per bulan (index 0 = Januari, index 1 = Februari, dst.)
+  const monthlyCounts = Array.from({ length: 12 }, (_, i) => {
+    const bulanIndex = i + 1;
+    return currentData.filter(item => item.Bulan === bulanIndex).length;
+  });
+
+  // Ambil bulan sekarang dan sebelumnya (berdasarkan waktu lokal Asia/Jakarta)
+  const now = new Date();
+  const currentMonth = now.getMonth() + 1; // Januari=1, Februari=2, dst.
+  const prevMonth = currentMonth > 1 ? currentMonth - 1 : null;
+
+  // Jumlah insiden bulan ini & bulan sebelumnya
+  const incidentsThisMonth = monthlyCounts[currentMonth - 1] || 0;
+  const incidentsPrevMonth =
+    prevMonth !== null ? monthlyCounts[prevMonth - 1] || 0 : 0;
+
+  // Hitung persentase perubahan (dibandingkan bulan ini vs bulan sebelumnya)
+  let trendValue: string | undefined;
+  let trendDirection: 'up' | 'down' | 'neutral' = 'neutral';
+
+  if (prevMonth && incidentsPrevMonth > 0) {
+    const change = ((incidentsThisMonth - incidentsPrevMonth) / incidentsPrevMonth) * 100;
+    const rounded = Math.round(change * 10) / 10; // satu desimal
+    if (rounded > 0) {
+      trendDirection = 'up';
+      trendValue = `+${rounded}%`;
+    } else if (rounded < 0) {
+      trendDirection = 'down';
+      trendValue = `${rounded}%`;
+    } else {
+      trendDirection = 'neutral';
+      trendValue = '0%';
+    }
+  } else {
+    // Kalau tidak ada data bulan sebelumnya atau prevMonth = null
+    trendValue = undefined;
+    trendDirection = 'neutral';
+  }
+
+  // KPI lain (contoh tetap menghitung YTD untuk kebutuhan lain)
   const totalIncidents = currentData.length;
   const avgIncidentsPerMonth = Math.round((totalIncidents / 12) * 100) / 100;
   const avgResponseTime = Math.round(
-    (currentData.reduce((sum, item) => sum + item.Durasi_Respons, 0) / totalIncidents) *
-      100
+    (currentData.reduce((sum, item) => sum + item.Durasi_Respons, 0) / totalIncidents) * 100
   ) / 100;
 
   const statusCounts = currentData.reduce((acc, item) => {
@@ -54,10 +92,10 @@ const OverviewPanel: React.FC = () => {
 
   const completedPercentage = Math.round((statusCounts['Selesai'] / totalIncidents) * 100);
 
-  // Monthly trend data
+  // Data untuk chart bulanan dan seterusnya (tidak berubah)
   const monthlyData = Array.from({ length: 12 }, (_, i) => {
     const monthIndex = i + 1;
-    const incidents = currentData.filter((item) => item.Bulan === monthIndex);
+    const incidents = currentData.filter(item => item.Bulan === monthIndex);
     const avgResponse =
       incidents.length > 0
         ? Math.round(incidents.reduce((sum, item) => sum + item.Durasi_Respons, 0) / incidents.length)
@@ -70,7 +108,6 @@ const OverviewPanel: React.FC = () => {
     };
   });
 
-  // Incident type distribution
   const typeData = currentData.reduce((acc, item) => {
     acc[item.Jenis_Kejadian] = (acc[item.Jenis_Kejadian] || 0) + 1;
     return acc;
@@ -81,7 +118,6 @@ const OverviewPanel: React.FC = () => {
     .sort((a, b) => b.count - a.count)
     .slice(0, 8);
 
-  // Status distribution for pie chart
   const statusChartData = Object.entries(statusCounts).map(([status, count]) => ({
     name: status,
     value: count,
@@ -94,15 +130,18 @@ const OverviewPanel: React.FC = () => {
     <div className="space-y-6">
       {/* KPI Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* 1) Insiden Bulan Ini (dengan trendValue) */}
         <KPICard
-          title="Total Insiden YTD"
-          value={totalIncidents.toLocaleString()}
-          subtitle="Januari - Desember 2025"
-          trend="up"
-          trendValue="+5.2%"
+          title="Insiden Bulan Ini"
+          value={incidentsThisMonth.toLocaleString()}
+          subtitle={monthNames[currentMonth - 1]}
+          trend={trendDirection}
+          trendValue={trendValue}
           icon={<Shield className="h-8 w-8" />}
           color="blue"
         />
+
+        {/* 2) Rata-rata Insiden/Bulan (YTD) */}
         <KPICard
           title="Rata-rata Insiden/Bulan"
           value={avgIncidentsPerMonth}
@@ -111,6 +150,8 @@ const OverviewPanel: React.FC = () => {
           icon={<Activity className="h-8 w-8" />}
           color="green"
         />
+
+        {/* 3) Rata-rata Durasi Respons (YTD) */}
         <KPICard
           title="Rata-rata Durasi Respons"
           value={`${avgResponseTime} menit`}
@@ -120,6 +161,8 @@ const OverviewPanel: React.FC = () => {
           icon={<Clock className="h-8 w-8" />}
           color="yellow"
         />
+
+        {/* 4) Kasus Selesai (YTD) */}
         <KPICard
           title="Kasus Selesai"
           value={`${completedPercentage}%`}
@@ -133,7 +176,7 @@ const OverviewPanel: React.FC = () => {
 
       {/* Charts Row 1 */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Monthly Trend */}
+        {/* Tren Bulanan Insiden */}
         <Card className="p-6 bg-slate-800 border-slate-700">
           <h3 className="text-lg font-semibold mb-4 text-white">Tren Bulanan Insiden</h3>
           <ResponsiveContainer width="100%" height={300}>
@@ -162,7 +205,7 @@ const OverviewPanel: React.FC = () => {
           </ResponsiveContainer>
         </Card>
 
-        {/* Status Distribution */}
+        {/* Distribusi Status Kasus */}
         <Card className="p-6 bg-slate-800 border-slate-700">
           <h3 className="text-lg font-semibold mb-4 text-white">Distribusi Status Kasus</h3>
           <ResponsiveContainer width="100%" height={300}>
@@ -197,7 +240,7 @@ const OverviewPanel: React.FC = () => {
 
       {/* Charts Row 2 */}
       <div className="grid grid-cols-1 gap-6">
-        {/* Incident Type Distribution */}
+        {/* Distribusi Jenis Kejadian (Top 8) */}
         <Card className="p-6 bg-slate-800 border-slate-700">
           <h3 className="text-lg font-semibold mb-4 text-white">
             Distribusi Jenis Kejadian (Top 8)
@@ -243,8 +286,8 @@ const OverviewPanel: React.FC = () => {
             <tbody>
               {monthlyData.map((data, index) => {
                 const monthIndex = index + 1;
-                const monthIncidents = currentData.filter((item) => item.Bulan === monthIndex);
-                const completed = monthIncidents.filter((item) => item.Status === 'Selesai').length;
+                const monthIncidents = currentData.filter(item => item.Bulan === monthIndex);
+                const completed = monthIncidents.filter(item => item.Status === 'Selesai').length;
                 const completionRate =
                   monthIncidents.length > 0
                     ? Math.round((completed / monthIncidents.length) * 100)
