@@ -132,8 +132,8 @@ const OverviewPanel: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* 1) Insiden Bulan Ini (dengan trendValue) */}
         <KPICard
-          title="Insiden Bulan Ini"
-          value={incidentsThisMonth.toLocaleString()}
+          title="Total Insiden"
+          value={totalIncidents.toLocaleString()}
           subtitle={monthNames[currentMonth - 1]}
           trend={trendDirection}
           trendValue={trendValue}
