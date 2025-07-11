@@ -1,104 +1,87 @@
-# Crime Monitoring Dashboard for Yogyakarta Police Command Center
+# Yogyakarta City Police Command Center Dashboard
+
+A real-time monitoring dashboard for criminal incidents and public order disturbances in Yogyakarta, designed to support rapid and accurate operational decision-making.
 
 ## Overview
 
-The city of Yogyakarta, as one of Indonesia's major cities, requires a real-time monitoring system for criminal incidents and public order disturbances. Such a system enables law enforcement officers to respond quickly and accurately. Key information such as crime type, incident location, victim count, and officer response time must be presented concisely and clearly to support decision-making processes.
+As a major Indonesian city, Yogyakarta requires an efficient monitoring system to respond to criminal incidents. This dashboard was built to present key information such as crime type, incident location, victim count, and officer response time in a concise and clear manner. This solution helps the Police Command Center overcome challenges like data fragmentation, slow response times, and difficulty in identifying high-risk areas (hotspots).
 
-## Problem Statement
+## Key Features
 
-The Yogyakarta Police Command Center currently faces the following challenges:
+  - **At-a-Glance KPI Cards:** Displays key metrics like the total number of monitored districts, the top hotspot with the highest number of incidents, and the area with the fastest response time.
+  - **Comparative Data Visualizations:**
+      - **Incidents per District Bar Chart:** Compares crime rates across different areas.
+      - **Average Response Time Bar Chart:** Highlights response efficiency in each district.
+  - **Interactive Map (Leaflet):** Provides spatial context with markers for each incident location, complete with case details.
+  - **Detailed Data Table:** Offers granular per-district analysis, including total incidents, victim counts, and the dominant crime type for deeper qualitative insights.
 
-* **Data Fragmentation**: Crime-related information is scattered across various sources such as field reports, historical databases, and external agencies.
-* **Delayed Response**: Without centralized monitoring, officers rely on manual instructions, increasing the risk of delayed responses.
-* **Difficulty Identifying Hotspots**: Without spatial analysis and mapping, it is hard to determine which districts have the highest number of incidents.
-* **Need for Summarized Visual Insights**: In addition to raw data, key performance indicators (KPIs) such as total incidents, average response time, and victim counts are essential for understanding trends and guiding decisions.
+## Live Demo
 
-## Dashboard Solution
+[**Link to Live Demo**](https://crime-monitoring-dashboard-yogyakarta.netlify.app/)
 
-To address these problems, a web-based real-time dashboard is developed, which includes:
+## Tech Stack
 
-* Summary KPI Cards
-* Bar Charts for incident and response distributions
-* Interactive Map for spatial context
-* Detail Table for comprehensive analysis
+This project is built with a modern technology stack to ensure a responsive, interactive, and maintainable interface.
 
-### Components and Expected Insights
+  - **Frontend:**
+      - **Framework:** React.js (with Vite)
+      - **Language:** TypeScript
+  - **UI & Components:**
+      - **Styling:** Tailwind CSS
+      - **Component Library:** Shadcn UI, Radix UI
+      - **Icons:** Lucide React
+  - **Data Visualization:**
+      - **Charts:** Recharts
+      - **Maps:** Leaflet & React-Leaflet
+  - **State & Data Management:**
+      - **Data Fetching:** TanStack Query (React Query)
+  - **Routing:** React Router DOM
+  - **Utilities:**
+      - **Date Manipulation:** date-fns
+      - **Excel Data Processing:** xlsx
 
-#### Top Summary Cards (Grid of 3)
+## Installation and Setup
 
-* **Total Districts**: Number of districts with at least one recorded incident. Provides insight into the monitored area coverage.
-* **Top Hotspot**: District with the highest number of incidents. Helps allocate personnel and focus patrols effectively.
-* **Fastest Response**: The district with the lowest average response time. Serves as a benchmark for efficient operations.
+To run this project locally, follow these steps:
 
-#### Bar Chart: Incidents per District
+1.  **Clone the repository:**
 
-* Displays the distribution of incidents across districts.
-* X-axis: District names (rotated 45 degrees)
-* Y-axis: Number of incidents
-* Insight: Helps compare which districts are experiencing the highest crime rates.
+    ```bash
+    git clone https://github.com/your-username/dashboard-command-center.git
+    cd dashboard-command-center
+    ```
 
-#### Map: Crime Locations
+2.  **Install dependencies:**
+    Use `npm` or `yarn` as you prefer.
 
-* Interactive map using OpenStreetMap and Leaflet.
-* Markers for each reported incident, containing details (type, district, status, time).
-* Insight: Identifies geographical clusters of crimes, e.g., highways, residential areas.
+    ```bash
+    npm install
+    ```
 
-#### Bar Chart: Average Response Time
+3.  **Run the development server:**
+    This command starts the application in development mode.
 
-* X-axis: District names
-* Y-axis: Average response time (in minutes)
-* Insight: Highlights which areas have the most efficient or slowest response times.
+    ```bash
+    npm run dev
+    ```
 
-#### Detail Table: Per-District Analysis
+    Open [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) (or the port shown in your terminal) to view it in the browser.
 
-* Columns: District Name, Total Incidents, Victim Count, Average Response Time, Dominant Crime Type
-* Insight: Provides granular context to support qualitative analysis and reporting.
+4.  **Build for production:**
+    This command creates an optimized build of the application in the `dist` directory.
 
-## Data Source and Transformation
+    ```bash
+    npm run build
+    ```
 
-* The data is synthetic but generated to reflect realistic crime patterns.
-* The total number of cases and completed cases is based on statistical reports from Badan Pusat Statistik.
-* Data is sourced from a dataset containing per-incident records: `ID`, `Crime Type`, `Date`, `Time`, `City`, `District`, `Latitude`, `Longitude`, `Victims`, `Status`, `Response Time`.
+## Data Source
 
-### Data Aggregation Examples
-
-* `districtData`: \[{ district, count, avgResponse, totalVictims }]
-* `crimeTypeByDistrict`: Dominant crime types in the top 5 districts
-* Spatial points are visualized using coordinates (latitude, longitude) for mapping.
+  - The data used in this dashboard is synthetic and has been designed to reflect realistic crime patterns in Yogyakarta.
+  - The total number of cases and completions is based on statistical reports from the Central Bureau of Statistics (Badan Pusat Statistik).
+  - The primary data source is a dataset containing per-incident records with fields such as: `ID`, `Crime Type`, `Date`, `Time`, `City`, `District`, `Latitude`, `Longitude`, `Victims`, `Status`, and `Response Time`.
 
 ## Design Principles
 
-### Chart Selection
-
-* **Bar Charts**: Effective for comparing quantities between categories (district names). Rotated labels ensure readability.
-* **Interactive Map**: Provides intuitive spatial awareness of crime clusters and areas of concern.
-* **Detail Table**: Offers in-depth information that supports the visuals, including fields that are not easily represented in charts.
-
-### Color and Visual Hierarchy
-
-* **Dark Theme**: Backgrounds use dark tones (e.g., slate) to emphasize bright charts and data.
-* **KPI Color Coding**:
-
-  * Green for total districts (stability)
-  * Red for top hotspot (critical alert)
-  * Blue for fastest response (efficiency)
-* **Chart Colors**:
-
-  * Incident bars in green (#10B981)
-  * Response time bars in orange (#F59E0B)
-
-### Layout and Accessibility
-
-* Consistent height across charts for visual balance
-* 45° rotated X-axis labels for better legibility
-* Cards and charts use subtle borders and shadows for separation and focus
-
-### Cognitive Design
-
-* **Proximity**: Related elements (titles and charts) are grouped visually
-* **Similarity**: Unified style across charts and cards builds visual consistency
-* **Continuity**: The layout flows from high-level summaries to detailed analysis in a top-down structure
-
-## Conclusion
-
-This dashboard provides the Yogyakarta Police Command Center with a centralized, real-time view of criminal incidents. With clear KPIs, comparative charts, spatial visualizations, and detailed data, it enhances operational decision-making, supports rapid response, and highlights areas requiring strategic focus.
+  - **Dark Theme:** The background uses dark shades (like slate) to emphasize bright charts and data, reducing eye strain.
+  - **Visual Hierarchy:** The layout flows from a high-level summary (KPIs) to in-depth analysis (detailed charts and tables), facilitating a gradual understanding of the information.
+  - **Effective Chart Selection:** Bar charts are used for comparing quantities, while the interactive map provides intuitive spatial awareness.
